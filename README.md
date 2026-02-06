@@ -45,3 +45,26 @@ npm run dev
 - POST /api/comments (admin only)
 - PUT /api/comments/:id (admin only)
 - DELETE /api/comments/:id (admin only)
+
+
+---
+
+## Postman Test Results
+
+### 1️⃣ Register (Admin)
+![Register](screenshots/01-register.png)
+
+### 2️⃣ Login
+![Login](screenshots/02-login.png)
+
+### 3️⃣ Create Post
+![Create Post](screenshots/03-create-post.png)
+
+### 4️⃣ Get Posts
+![Get Posts](screenshots/04-get-posts.png)
+
+### 5️⃣ Create Comment
+![Create Comment](screenshots/05-create-comment.png)
+
+### 6️⃣ Get Comments
+![Get Comments](screenshots/06-get-comments.png)
