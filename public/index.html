@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>✨ Full-Stack Blog</h1>
+    <p class="muted">JWT Auth • RBAC • MongoDB • Express</p>
+
+
+    <section class="card">
+      <h2>Auth</h2>
+
+      <div class="grid">
+        <form id="registerForm">
+          <h3>Register</h3>
+          <input name="email" type="email" placeholder="email" required />
+          <input name="password" type="password" placeholder="password" required />
+          <button type="submit">Register</button>
+        </form>
+
+        <form id="loginForm">
+          <h3>Login</h3>
+          <input name="email" type="email" placeholder="email" required />
+          <input name="password" type="password" placeholder="password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div class="row">
+        <button id="logoutBtn" type="button">Logout</button>
+        <span id="authStatus">Not logged in</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="row space">
+        <h2>Posts</h2>
+        <button id="refreshBtn" type="button">Refresh</button>
+      </div>
+      <div id="posts"></div>
+    </section>
+
+    <section class="card">
+      <h2>Admin: Create Post</h2>
+      <form id="createPostForm">
+        <input name="title" placeholder="title" required />
+        <textarea name="content" placeholder="content" required></textarea>
+        <button type="submit">Create</button>
+      </form>
+      <p class="muted">If you’re not admin and you get 403 — that means RBAC works.</p>
+    </section>
+
+    <section class="card">
+      <h2>Logs</h2>
+      <pre id="log"></pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
